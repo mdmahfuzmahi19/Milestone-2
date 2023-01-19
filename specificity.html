@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        .fire{
+            color: red;
+        }
+        /* class ar teke id power besi  */
+        #two{
+            color: blue;
+        }
+        h1{
+            color: aqua !important;
+            /* ar shobcha besi power holo !important er */
+        }
+        h1{
+            color: peru;
+            color: lightpink;
+            /* je nise takbe tar besi power takbe*/
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>My Special Heading-1</h1>
+    <h1>My Special Heading-1</h1>
+    <h1 style="color: yellow;" class="fire" id="two">
+        <!-- ar class,id r teke inline style er power besi -->
+        My Special Heading-1</h1>
+    <h1>My Special Heading-1</h1>
+</body>
+</html>
