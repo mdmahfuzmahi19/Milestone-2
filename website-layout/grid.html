@@ -1,22 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Explore</title>
     <style>
-        .containar{
+        .containar {
             display: grid;
-            grid-template-columns: repeat(4 1fr);
-            /* grid-template-columns: 200px 100px 200px 300px; */
+            /* grid-template-columns: repeat(4, 1fr); */
+            justify-content: center;
+            /* justify-items: center; */
+            grid-template-columns: 200px 200px 200px 200px;
+            grid-column-gap: 50px;
+            grid-row-gap: 10px;
         }
-        .item{
+
+        .item {
             border: 1px solid indianred;
             font-size: 25px;
         }
     </style>
 </head>
+
 <body>
     <h2>Explore grid layout</h2>
     <div class="containar">
@@ -42,4 +49,5 @@
         <div class="item">item-20</div>
     </div>
 </body>
+
 </html>
